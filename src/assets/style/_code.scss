@@ -57,8 +57,10 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	border-radius: var(--radius);
 	white-space: normal;
+	color: #9a6e3a;
 }
 
 .token.comment,
@@ -101,7 +103,6 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
 	color: #9a6e3a;
-	background: hsla(0, 0%, 100%, .5);
 }
 
 .token.atrule,

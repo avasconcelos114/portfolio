@@ -93,8 +93,9 @@ query Post ($path: String!) {
     }
   }
   &__content {
+    color: var(--title-color);
     h1, h2, h3, h4, h5 {
-      color: var(--title-color);
+      color: var(--highlight-color);
     }
 
     h2:first-child {

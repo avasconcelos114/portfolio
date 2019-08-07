@@ -26,6 +26,7 @@ export default {
 
 <style lang="scss">
 .post-card {
+  color: var(--title-color);
   margin-bottom: var(--space);
   position: relative;
   &__header {
@@ -43,7 +44,7 @@ export default {
     min-width: 100%;
   }
   &__title {
-    color: var(--title-color);
+    color: var(--highlight-color);
     margin-top: 0;
   }
   &:hover {

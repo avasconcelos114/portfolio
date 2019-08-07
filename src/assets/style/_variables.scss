@@ -5,18 +5,20 @@ html {
 
 // Light default theme
 body {
- 	--bg-color: #18181E;
- 	--bg-content-color: #fff;
- 	--bg-code: #fffbf3;
- 	--body-color: #FFFFFF;
-	 --title-color: #111;
-	 --img-bg-color: #212023;
- 	--highlight-color: #DEC79B;
- 	--border-color:  rgba(0,0,0,.1);;
-    --space: 3.5rem;
-    --content-width: 860px;
-    --header-height: 80px;
-    --radius: 5px;
+	// --bg-color: #18181E;
+	--bg-color: #080808;
+	--bg-content-color: #fff;
+	--bg-code: #080808;
+	--bg-card: #19191a;
+	--body-color: #FFFFFF;
+	--title-color: #c3c4c4;
+	--img-bg-color: #212023;
+	--highlight-color: #DEC79B;
+	--border-color:  rgba(0,0,0,.1);;
+	--space: 3.5rem;
+	--content-width: 860px;
+	--header-height: 80px;
+	--radius: 5px;
 }
 
 // Make  things smaller for mobile
