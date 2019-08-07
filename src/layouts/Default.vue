@@ -17,11 +17,9 @@
 </template>
 
 <style lang="scss">
-@import '~/assets/scss/variables.scss';
-
 body {
-  background-color: $backgroundColor;
-  color: $baseTextColor;
+  background-color: var(--bg-color);
+  color: var(--base-color);
   font-family: "Montserrat",Arial,sans-serif;
   margin:0;
   padding:0;
@@ -33,11 +31,6 @@ body {
 
 .fade-enter {
   opacity: 0;
-}
-
-.home-links a {
-  margin-right: 1rem;
-  color: $highlightColor;
 }
 
 .layout {
@@ -58,10 +51,10 @@ body {
 .nav__link {
   margin-left: 20px;
   text-decoration: none;
-  color: $baseTextColor;
+  color: var(--body-color);
 
   &:hover {
-    color: $highlightColor
+    color: var(--highlight-color);
   }
 }
 </style>

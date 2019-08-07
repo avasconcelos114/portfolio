@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h2>
-      Hello! <br>
+      Hello! <br> <br>
       My name is <span class="highlighted">Andre Vasconcelos</span> and I am a full stack developer.
     </h2>
     
@@ -60,13 +60,13 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~/assets/scss/variables.scss';
 .highlighted {
-  color: $highlightColor;
+  color: var(--highlight-color);
 }
 
 .skill-container {
   display: flex;
   flex-direction: row;
+  color: var(--body-color);
 }
 </style>
