@@ -101,9 +101,6 @@ query Post ($path: String!) {
     h2:first-child {
       margin-top: 0;
     }
-    p:first-of-type {
-      font-size: 1.2em;
-    }
     img {
       width: calc(100% + var(--space) * 2);
       margin-left: calc(var(--space) * -1);
