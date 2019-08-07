@@ -1,0 +1,90 @@
+{
+    "frontend": [
+        {
+            "title": "React.js",
+            "level": 4
+        },
+        {
+            "title": "HTML5",
+            "level": 4
+        },
+        {
+            "title": "Vue.js",
+            "level": 5
+        },
+        {
+            "title": "Webpack",
+            "level": 2
+        },
+        {
+            "title": "CSS3",
+            "level": 4
+        },
+        {
+            "title": "JQuery",
+            "level": 3
+        }
+    ],
+    "backend": [
+        {
+            "title": "Node.js",
+            "level": 4
+        },
+        {
+            "title": "AWS",
+            "level": 2
+        },
+        {
+            "title": "RDBMS",
+            "level": 4
+        },
+        {
+            "title": "No-SQL",
+            "level": 3
+        },
+        {
+            "title": "Golang",
+            "level": 2
+        }
+    ],
+    "devops": [
+        {
+            "title": "CI/CD",
+            "level": 3
+        },
+        {
+            "title": "Docker",
+            "level": 3
+        },
+        {
+            "title": "Linux Command Line",
+            "level": 3
+        },
+        {
+            "title": "Terraform",
+            "level": 2
+        },
+        {
+            "title": "Nginx",
+            "level": 3
+        }
+    ],
+    "misc": [
+        {
+            "title": "Portuguese",
+            "level": 5
+        },
+        {
+            "title": "English",
+            "level": 5
+        },
+        {
+            "title": "Korean",
+            "level": 3
+        },
+        {
+            "title": "Presentation Skills",
+            "level": 3
+        }
+    ]
+}
