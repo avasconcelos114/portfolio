@@ -1,60 +1,62 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <nav class="nav">
-        <g-link class="nav__link" to="/">About</g-link>
-        <g-link class="nav__link" to="/blog">Blog</g-link>
-        <g-link class="nav__link" to="/my-work">My work</g-link>
-        <g-link class="nav__link" to="/contact">Contact me</g-link>
-      </nav>
-    </header>
+  <div class="main-wrapper">
+    <g-image class="background" src="~/assets/img/main_background.jpg"/>
+    <Header />
+    <div class="header-margin"></div>
     <transition name="fade" appear>
-      <div>
+      <div class="layout">
         <slot/>
       </div>
     </transition>
   </div>
 </template>
 
+<script>
+import Header from '~/components/Header'
+export default {
+  components: {
+    Header
+  },
+}
+</script>
+
 <style lang="scss">
 body {
   background-color: var(--bg-color);
   color: var(--base-color);
-  font-family: "Montserrat",Arial,sans-serif;
-  margin:0;
-  padding:0;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.5;
+  overflow: hidden;
 }
 .fade-enter-active {
-  transition: opacity .5s;
+  transition: opacity .2s;
 }
-
 .fade-enter {
   opacity: 0;
 }
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+.header-margin {
+  margin-bottom: 60px;
 }
-
-.header {
+.main-wrapper {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
+  flex-direction: column;
 
-.nav__link {
-  margin-left: 20px;
-  text-decoration: none;
-  color: var(--body-color);
-
-  &:hover {
-    color: var(--highlight-color);
+  .background {
+    filter: opacity(25%);
+    position: fixed;
+    z-index: -1;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
+}
+.layout {
+  width: 100%;
+  margin: 0 auto;
+  max-height: calc(100vh - 60px);
+  overflow: auto;
 }
 </style>
