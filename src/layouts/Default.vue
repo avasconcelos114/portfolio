@@ -4,7 +4,7 @@
     <Header />
     <div class="header-margin"></div>
     <transition name="fade" appear>
-      <div class="layout">
+      <div id="layout">
         <slot/>
       </div>
     </transition>
@@ -44,7 +44,7 @@ body {
   flex-direction: column;
 
   .background {
-    filter: opacity(25%);
+    filter: opacity(50%);
     position: fixed;
     z-index: -1;
     top: 0; 
@@ -53,7 +53,7 @@ body {
     width: 100%;
   }
 }
-.layout {
+#layout {
   width: 100%;
   margin: 0 auto;
   max-height: calc(100vh - 60px);

@@ -8,7 +8,7 @@ canonical_url: false
 description: "Rendering 3D entities programatically with AWS sumerian."
 ---
 
-If you've followed [the previous article](https://dev.to/wandererstudio/rendering-your-first-ar-object-with-aws-sumerian-12-27po) on this tutorial, you should now have a working project with two scenes attached to it.
+If you've followed [the previous article](/blog/rendering-your-first-ar-object-with-aws-sumerian-1) on this tutorial, you should now have a working project with two scenes attached to it.
   
 We'll now go over how to create and publish scenes, and use these other scenes inside other scenes inside your projects.
 
@@ -21,7 +21,7 @@ Since we just want to render a simple 3d object, this is what we're going to do:
 2. Select the **Box** entity on the top-left corner of the prompted screen.
 3. (optional) Click on the box, and change its `name` property on the right-hand side of the screen, so that you can identify this entity more easily in the future.
 
-![](https://thepracticaldev.s3.amazonaws.com/i/lnb3zwbxgg6yo82ayreg.png)
+![](../images/sumerian/sumerian_scene_box.png)
 
 As AWS Sumerian saves all changes automatically, we're pretty much done creating a basic 3D shape that would be rendered on the screen (Though you can feel free to make it as complex as you like).
 
@@ -80,7 +80,7 @@ Note: You may call the `key` and `description` values whatever you wish, however
 
 At this point you may save your script file, and you'll notice that a new slot with the `Entity` attribute appeared on the right-hand attribute menu (inside the Script section). 
 
-![](https://thepracticaldev.s3.amazonaws.com/i/kax50n5vue9y78fuclgq.png)
+![](../images/sumerian/sumerian_script.png)
 
 At this point, you can drag your asset pack into the empty slot and the name of your pack should now be seen inside that empty slot, and to finalize the process, add the bit of code that will instantiate your asset and place it inside the AR world scene:
 ```js

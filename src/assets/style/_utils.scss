@@ -9,3 +9,29 @@
 .highlighted {
   color: var(--highlight-color);
 }
+
+input[type="button"]{
+   outline:none;
+}
+
+// Scrollbar customization
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb); 
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

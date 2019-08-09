@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="section main">
+    <section id="main">
       <div>
         <h2>
           Hello! <br> <br>
@@ -9,12 +9,14 @@
         <h3>
           I like working with <span class="rotating-text highlighted"></span>
         </h3>
-
       </div>
-    </div>
+      <div class="button-container">
+        <button v-on:click="scrollToIntro()">Read more about me</button>
+      </div>
+    </section>
   
     <!-- Basic self intro -->
-    <div class="section intro">
+    <section id="intro">
       <div>
         <h3>
           I am a <span class="highlighted">Brazilian</span> developer based in Seoul, South Korea.
@@ -25,46 +27,48 @@
           I also like to use my spare time to build things for others.
         </h4>
       </div>
-    </div>
+      <div class="intro__image-container">
+        <g-image alt="Andre Vasconcelos" src="~/assets/img/portfolio_picture.jpg" />
+      </div>
+    </section>
     <!--Skill section -->
     <!-- TODO: Separate skill box/counter into component -->
-    <div class="section">
+    <section id="skills">
       <h4 class="highlighted">Front-end</h4>
       <div class="skill-container">
-        <div class="skill" v-bind:key="skill.title" v-for="skill in frontend">
-          {{ skill.title }} - {{ skill.level }}
-        </div>
+        <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in frontend"/>
       </div>
 
       <h4 class="highlighted">Back-end</h4>
       <div class="skill-container">
-        <div  v-bind:key="skill.title" v-for="skill in backend">
-          {{ skill.title }} - {{ skill.level }}
-        </div>
+        <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in backend"/>
       </div>
 
       <h4 class="highlighted">DevOps</h4>
       <div class="skill-container">
-        <div  v-bind:key="skill.title" v-for="skill in devops">
-          {{ skill.title }} - {{ skill.level }}
-        </div>
+        <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in devops"/>
       </div>
 
       <h4 class="highlighted">Misc</h4>
       <div class="skill-container">
-        <div  v-bind:key="skill.title" v-for="skill in misc">
-          {{ skill.title }} - {{ skill.level }}
-        </div>
+        <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in misc"/>
       </div>
-    </div>
+    </section>
   </Layout>
 </template>
 
 <script>
-import Skills from '~/data/skills.json'
 import Typed from 'typed.js'
+import {TweenLite, Power3} from 'gsap'
+import ScrollTo from 'gsap/ScrollToPlugin'
+
+import Skills from '~/data/skills.json'
+import Skill from '~/components/Skill.vue'
 
 export default {
+  components: {
+    Skill,
+  },
   metaInfo: {
     title: 'Welcome'
   },
@@ -94,48 +98,109 @@ export default {
     }
 
     new Typed(".rotating-text", options);
+  },
+  methods: {
+    scrollToIntro: function() {
+      const mainElement = document.getElementById('layout')
+      TweenLite.to(mainElement, 1, {scrollTo: '#intro', ease: Power3.easeOut});
+    }
   }
 }
 </script>
 
 <style lang="scss">
-.intro {
-  display: flex;
-  flex-direction: row;
-  height: 60vh;
-  div {
-    max-width: 750px;
-  }
-}
-.main {
-  position: relative;
 
-  div {
-    position: absolute;
-  }
-  img {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    filter: opacity(23%);
-  }
-
-  h3 {
-    margin-top: 100px;
-  }
-}
-.section {
-  height: 100vh;
+section {
   min-height: 560px;
   padding: 0 10%;
+
+  h2, h3, h4 {
+    margin-top: 100px;
+    font-weight: 500;
+  }
+  span {
+    font-weight: 700;
+  }
+}
+#main {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: -webkit-fill-available;
+
+    button {
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 0.8rem;
+      color: var(--body-color);
+      height: 100px;
+      transition: all 0.3s ease;
+    
+      &:hover {
+        color: var(--highlight-color);
+      }
+      &::after {
+        content: '';
+        height: 15px;
+        width: 0;
+        border: 0.5px solid var(--body-color);
+        top: 5px;
+        position: relative;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+#intro {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  .intro__image-container {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+  }
+  div {
+    max-width: 750px;
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    line-height: 2rem;
+    margin-top: 50px;
+  }
+
+  img {
+    filter: grayscale(.3) sepia(0.5);
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+    height: 350px;
+    width: 350px;
+  }
+}
+#skills {
+  height: 100vh;
 }
 .skill-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   color: var(--body-color);
-}
-.skill {
-  width: 50%;
 }
 </style>
