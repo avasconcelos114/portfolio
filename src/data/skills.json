@@ -1,88 +1,108 @@
 {
     "frontend": [
         {
+            "id": "reactjs",
             "title": "React.js",
             "level": 4
         },
         {
-            "title": "HTML 5",
+            "id": "html",
+            "title": "HTML5",
             "level": 4
         },
         {
+            "id": "vuejs",
             "title": "Vue.js",
             "level": 5
         },
         {
+            "id": "webpack",
             "title": "Webpack",
             "level": 2
         },
         {
-            "title": "CSS 3",
+            "id": "css",
+            "title": "CSS3",
             "level": 4
         },
         {
+            "id": "jquery",
             "title": "JQuery",
             "level": 3
         }
     ],
     "backend": [
         {
+            "id": "nodejs",
             "title": "Node.js",
             "level": 4
         },
         {
+            "id": "aws",
             "title": "Amazon Web Services",
-            "level": 2
+            "level": 3
         },
         {
-            "title": "Relational Databases",
+            "id": "sql",
+            "title": "SQL",
             "level": 4
         },
         {
+            "id": "nosql",
             "title": "No-SQL",
             "level": 3
         },
         {
+            "id": "golang",
             "title": "Golang",
             "level": 2
         }
     ],
     "devops": [
         {
+            "id": "cicd",
             "title": "CI/CD",
             "level": 3
         },
         {
+            "id": "docker",
             "title": "Docker",
             "level": 3
         },
         {
+            "id": "linux",
             "title": "Linux Command Line",
-            "level": 3
+            "level": 4
         },
         {
+            "id": "terraform",
             "title": "Terraform",
             "level": 2
         },
         {
+            "id": "nginx",
             "title": "Nginx",
             "level": 3
         }
     ],
     "misc": [
         {
+            "id": "pt",
             "title": "Portuguese",
             "level": 5
         },
         {
+            "id": "en",
             "title": "English",
             "level": 5
         },
         {
+            "id": "kr",
             "title": "Korean",
             "level": 3
         },
         {
+            "id": "presentation",
             "title": "Presentation Skills",
             "level": 3
         }

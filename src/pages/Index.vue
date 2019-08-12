@@ -17,40 +17,47 @@
   
     <!-- Basic self intro -->
     <section id="intro">
-      <div>
-        <h3>
-          I am a <span class="highlighted">Brazilian</span> developer based in Seoul, South Korea.
-        </h3>
+      <div class="intro__row flex__row">
+        <div class="intro__description flex__column">
+          <h3>
+            I am a <span class="highlighted">Brazilian</span> developer based in Seoul, South Korea.
+          </h3>
 
-        <h4>
-          I currently work at <span class="highlighted">Slexn Inc.</span> customizing enterprise-grade software for large-scale client sites. <br> <br>
-          I also like to use my spare time to build things for others.
-        </h4>
+          <h4>
+            I currently work at <span class="highlighted">Slexn Inc.</span> customizing enterprise-grade software for large-scale client sites. <br> <br>
+            I also like to use my spare time to build things for others.
+          </h4>
+        </div>
+  
+        <div class="intro__image-container">
+          <g-image alt="Andre Vasconcelos" src="~/assets/img/portfolio_picture.jpg" />
+        </div>
       </div>
-      <div class="intro__image-container">
-        <g-image alt="Andre Vasconcelos" src="~/assets/img/portfolio_picture.jpg" />
+
+      <div class="intro__row flex__column">
+        <Experience :experience="experience" :skillList="this.skillList" v-bind:key="experience.company" v-for="experience in experiences"/>
       </div>
     </section>
+
     <!--Skill section -->
-    <!-- TODO: Separate skill box/counter into component -->
     <section id="skills">
       <h4 class="highlighted">Front-end</h4>
-      <div class="skill-container">
+      <div class="skill-container flex__row">
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in frontend"/>
       </div>
 
       <h4 class="highlighted">Back-end</h4>
-      <div class="skill-container">
+      <div class="skill-container flex__row">
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in backend"/>
       </div>
 
       <h4 class="highlighted">DevOps</h4>
-      <div class="skill-container">
+      <div class="skill-container flex__row">
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in devops"/>
       </div>
 
       <h4 class="highlighted">Misc</h4>
-      <div class="skill-container">
+      <div class="skill-container flex__row">
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in misc"/>
       </div>
     </section>
@@ -65,9 +72,13 @@ import ScrollTo from 'gsap/ScrollToPlugin'
 import Skills from '~/data/skills.json'
 import Skill from '~/components/Skill.vue'
 
+import Experiences from '~/data/experience.json'
+import Experience from '~/components/Experience.vue'
+
 export default {
   components: {
     Skill,
+    Experience,
   },
   metaInfo: {
     title: 'Welcome'
@@ -78,13 +89,15 @@ export default {
       backend: Skills.backend,
       devops: Skills.devops,
       misc: Skills.misc,
+      skillList: [],
+      experiences: Experiences,
     }
   },
   mounted() {
     // Loading and configuring rotating text
-    const allSkills = this.frontend.concat(this.backend, this.devops)
+    this.skillList = this.frontend.concat(this.backend, this.devops)
     const strings = []
-    allSkills.forEach(skill => {
+    this.skillList.forEach(skill => {
       strings.push(skill.title)
     })
 
@@ -162,22 +175,24 @@ section {
 }
 #intro {
   display: flex;
-  flex-direction: row;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 
-  .intro__image-container {
+  .intro__row {
     display: flex;
-    justify-content: center;
-    width: 45%;
-  }
-  div {
-    max-width: 750px;
-    height: 500px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+    .intro__description {
+      max-width: 750px;
+      height: 500px;
+      width: 50%;
+      justify-content: center;
+      align-items: center;
+    }
+    .intro__image-container {
+      display: flex;
+      justify-content: center;
+      width: 45%;
+    }
   }
 
   h4 {
@@ -186,7 +201,7 @@ section {
   }
 
   img {
-    filter: grayscale(.3) sepia(0.5);
+    filter: grayscale(.3);
     border-radius: 100%;
     object-fit: cover;
     object-position: 0% 0%;
@@ -195,11 +210,9 @@ section {
   }
 }
 #skills {
-  height: 100vh;
+  min-height: 100vh;
 }
 .skill-container {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   color: var(--body-color);
 }

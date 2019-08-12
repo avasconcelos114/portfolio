@@ -1,6 +1,6 @@
 <template>
     <div class="skill">
-        <span>{{skill.title}}</span>
+        <span :id="skill.id">{{skill.title}}</span>
         <div class="level-container">
             <input 
                 value="1" 

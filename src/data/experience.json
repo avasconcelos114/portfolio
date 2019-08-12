@@ -3,33 +3,40 @@
        "city": "Seoul",
        "country": "South Korea",
        "company": "MAYN Ltd.",
+       "from": "06/21/2015",
+       "until": "10/31/2017",
        "tasks": [
-           "Developed a dashboard using React.js for the gov't",
-           "Assisted in developing back-end APIs and SQL queries"
+            "Developed the front-end for the company's core product (Disaster Recovery Automation Solution) utilizing React.js and Redux.",
+            "Developed a custom dashboard application for the Korea Local Information Research & Development Institute.",
+            "Assisted with the created of back-end features in Java, as well as the creation of SQL queries for CRUD actions.",
+            "Maintained and improved the back-end logic of a webapp for project management built over the Spring Framework (Java), and oversaw its implementation in the client-site (the Cloud Data Center of the Metropolitan City of Seoul)"
        ],
        "skills": [
-           "React.js",
-           "MySQL",
-           "HTML5",
-           "CSS3"
+           "reactjs",
+           "sql",
+           "html",
+           "css",
+           "jquery"
        ]
     },
     {
         "city": "Seoul",
         "country": "South Korea",
         "company": "Slexn Inc.",
+        "from": "11/01/2017",
+        "until": "present",
         "tasks": [
-            "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics",
-            "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others",
-            "Set up CI/CD Pipelines that automatically rebase customized clients onto the upstream master, and developed a chatbot to alert development team of failed rebase attempts",
-            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics"
+            "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
+            "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others.",
+            "Set up CI/CD Pipelines that automatically rebase customized clients onto the upstream master, and developed a chatbot to alert development team of failed rebase attempts.",
+            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics."
         ],
         "skills": [
-            "React.js",
-            "Node.js",
-            "PostgreSQL",
-            "Golang",
-            "Docker"
+            "reactjs",
+            "nodejs",
+            "sql",
+            "golang",
+            "docker"
         ]
     }
 ]
