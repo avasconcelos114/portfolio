@@ -1,6 +1,8 @@
 ---
 title: Rendering your first AR object with AWS Sumerian (2/2)
 date: 2018-09-17
+project: false
+cover_image: ../images/sumerian/sumerian_scene_box.png
 slug: 'rendering-your-first-ar-object-with-aws-sumerian-2'
 published: true
 tags: ['AWS','AR', 'iOS', 'tutorial']

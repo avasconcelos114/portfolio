@@ -1,6 +1,7 @@
 ---
 title: The rise of WebVR (and how Aframe can help fill the content drought)
 date: 2019-04-15
+project: false
 slug: 'the-rise-of-webvr-and-how-aframe-can-help-fill-the-content-drought'
 published: true
 tags: ['VR','WebVR', 'A-Frame']

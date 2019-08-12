@@ -68,12 +68,13 @@ export default {
 
     span {
         width: 50%;
+        padding: 5px;
     }
-  .level-container {
-      display: flex;
-      justify-items: flex-end;
-      width: -webkit-fill-available;
-  }
+    .level-container {
+        display: flex;
+        justify-items: flex-end;
+        width: -webkit-fill-available;
+    }
 }
 input[type=checkbox] {
     display: none;

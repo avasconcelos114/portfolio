@@ -4,7 +4,7 @@
     <Author :show-title="true" />
 
     <!-- List posts -->
-    <div class="posts">
+    <div class="posts content-box">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
   </Layout>
@@ -27,7 +27,7 @@ export default {
 
 <page-query>
 {
-  posts: allPost(filter: { published: { eq: true }}) {
+  posts: allPost(filter: { published: { eq: true }, project: { eq: false }}) {
     edges {
       node {
         id
@@ -41,6 +41,7 @@ export default {
         date (format: "D. MMMM YYYY")
         timeToRead
         description
+        cover_image (height: 340)
         ...on Post {
             id
             title
@@ -53,5 +54,4 @@ export default {
 </page-query>
 
 <style lang="scss">
-
 </style>

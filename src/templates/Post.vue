@@ -1,24 +1,26 @@
 <template>
   <Layout>
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+      <div class="post-title">
+        <h1 class="post-title__text">
+          {{ $page.post.title }}
+        </h1>
+        
+        <PostMeta :post="$page.post" />
+      </div>
       
-      <PostMeta :post="$page.post" />
-
-    </div>
-    
     <div class="post content-box">
-      <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
+      <div>
+        <div class="post__header">
+          <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
+        </div>
+
+        <div class="post__content" v-html="$page.post.content" />
+
+        <div class="post__footer">
+          <PostTags :post="$page.post" />
+        </div>
       </div>
 
-      <div class="post__content" v-html="$page.post.content" />
-
-      <div class="post__footer">
-        <PostTags :post="$page.post" />
-      </div>
     </div>
 
     <div class="post-comments">
@@ -60,6 +62,7 @@ query Post ($path: String!) {
     path
     date (format: "D. MMMM YYYY")
     timeToRead
+    cover_image
     tags {
       id
       title
@@ -77,6 +80,8 @@ query Post ($path: String!) {
   text-align: center;
 }
 .post {
+  background-color: var(--bg-card);
+  padding: var(--space);
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
@@ -84,7 +89,8 @@ query Post ($path: String!) {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-    
+
+
     img {
       width: 100%;
     }

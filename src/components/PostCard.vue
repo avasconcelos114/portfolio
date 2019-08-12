@@ -1,5 +1,8 @@
 <template>
-  <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
+  <div class="post-card" :class="{'post-card--has-poster' : post.poster}">
+    <div class="post-card__header">
+      <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
+    </div>
     <div class="post-card__content">
       <h2 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
@@ -27,8 +30,15 @@ export default {
 <style lang="scss">
 .post-card {
   color: var(--title-color);
+  background-color: var(--bg-card);
+  padding: var(--space);
   margin-bottom: var(--space);
+  border-radius: var(--radius);
+  box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+  transition: background-color .6s;
+	transition: transform .3s, background-color .3s, box-shadow .6s;
   position: relative;
+
   &__header {
     margin-left: calc(var(--space) * -1);
     margin-right: calc(var(--space) * -1);

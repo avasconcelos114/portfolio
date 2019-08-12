@@ -35,7 +35,7 @@
       </div>
 
       <div class="intro__row flex__column">
-        <Experience :experience="experience" :skillList="this.skillList" v-bind:key="experience.company" v-for="experience in experiences"/>
+        <Experience :experience="experience" :skillList="skillList" v-bind:key="experience.company" v-for="experience in experiences"/>
       </div>
     </section>
 
@@ -72,7 +72,7 @@ import ScrollTo from 'gsap/ScrollToPlugin'
 import Skills from '~/data/skills.json'
 import Skill from '~/components/Skill.vue'
 
-import Experiences from '~/data/experience.json'
+import Experiences from '~/data/experiences.json'
 import Experience from '~/components/Experience.vue'
 
 export default {
@@ -93,9 +93,11 @@ export default {
       experiences: Experiences,
     }
   },
+  beforeMount() {
+    this.skillList = this.frontend.concat(this.backend, this.devops)
+  },
   mounted() {
     // Loading and configuring rotating text
-    this.skillList = this.frontend.concat(this.backend, this.devops)
     const strings = []
     this.skillList.forEach(skill => {
       strings.push(skill.title)
@@ -127,7 +129,7 @@ section {
   min-height: 560px;
   padding: 0 10%;
 
-  h2, h3, h4 {
+  h2, h4 {
     margin-top: 100px;
     font-weight: 500;
   }
@@ -191,6 +193,7 @@ section {
     .intro__image-container {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 45%;
     }
   }

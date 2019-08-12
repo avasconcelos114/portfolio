@@ -1,5 +1,26 @@
 [
     {
+        "city": "Seoul",
+        "country": "South Korea",
+        "company": "Slexn Inc.",
+        "from": "11/01/2017",
+        "until": "present",
+        "tasks": [
+            "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
+            "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others.",
+            "Set up CI/CD Pipelines that automatically rebase customized clients onto the upstream master, and developed a chatbot to alert development team of failed rebase attempts.",
+            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics."
+        ],
+        "skills": [
+            "reactjs",
+            "nodejs",
+            "sql",
+            "golang",
+            "docker",
+            "cicd"
+        ]
+    },
+    {
        "city": "Seoul",
        "country": "South Korea",
        "company": "MAYN Ltd.",
@@ -18,25 +39,5 @@
            "css",
            "jquery"
        ]
-    },
-    {
-        "city": "Seoul",
-        "country": "South Korea",
-        "company": "Slexn Inc.",
-        "from": "11/01/2017",
-        "until": "present",
-        "tasks": [
-            "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
-            "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others.",
-            "Set up CI/CD Pipelines that automatically rebase customized clients onto the upstream master, and developed a chatbot to alert development team of failed rebase attempts.",
-            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics."
-        ],
-        "skills": [
-            "reactjs",
-            "nodejs",
-            "sql",
-            "golang",
-            "docker"
-        ]
     }
 ]
