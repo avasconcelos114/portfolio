@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrapper">
-    <g-image class="background" src="~/assets/img/main_background.jpg"/>
+    <g-image class="background" alt="background_img" src="~/assets/img/main_background.jpg"/>
     <Header />
     <div class="header-margin"></div>
     <transition name="fade" appear>
@@ -57,7 +57,7 @@ body {
 #layout {
   width: 100%;
   margin: 0 auto;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
   overflow: auto;
 }
 </style>
