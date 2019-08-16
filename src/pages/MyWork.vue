@@ -64,8 +64,10 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 50px;
 
+  @include lg {
+    padding: 50px;
+  }
 }
 .projects > div {
   width: 100%;

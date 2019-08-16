@@ -18,7 +18,7 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: 'Portfolio',
-  siteDescription: '',
+  siteDescription: 'Andre Vasconcelos\'s portfolio & blog. Come follow his journey across the tech landscape as he tries to make sense of the latest trends in AR, VR, Web, and Mobile development!',
   siteUrl: 'https://avasconcelos114.github.io',
   pathPrefix: '/portfolio',
   icon: './src/assets/img/personal_logo_dark_32.png',
