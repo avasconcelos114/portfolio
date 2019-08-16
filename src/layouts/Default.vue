@@ -58,6 +58,8 @@ body {
   width: 100%;
   margin: 0 auto;
   height: calc(100vh - 90px);
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 </style>
