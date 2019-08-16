@@ -58,13 +58,18 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~/assets/style/_mixins.scss";
 .skill {
-  width: 50%;
-  display: flex;
-  margin: 10px 0px;
-  flex-direction: row;
-  align-items: center;
-  color: var(--body-color);
+    width: 100%;
+    @include lg {
+        width: 50%;
+    }
+  
+    display: flex;
+    margin: 10px 0px;
+    flex-direction: row;
+    align-items: center;
+    color: var(--body-color);
 
     span {
         width: 50%;

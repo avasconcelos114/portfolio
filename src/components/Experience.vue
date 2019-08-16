@@ -1,24 +1,23 @@
 <template>
-    <div class="experience__container">
-        <div>
-            <span>
-                <span class="highlighted">{{experience.company}}</span> 
-                {{experience.city}}, {{experience.country}}
-                <span class="experience__timeline">{{experience.from}} ~ {{experience.until}}</span>
-            </span>
+    <div class="experience post-card">
+        <div class="experience__header">
+            <span class="post-card__title">{{experience.company}}</span>
+            <span class="experience__location">{{experience.city}}, {{experience.country}}</span>
+            <span class="experience__timeline">{{experience.from}} ~ {{experience.until}}</span>
         </div>
-        <ul class="experience__task-list">
-            <li v-bind:key="task" v-for="task in experience.tasks">{{task}}</li>
-        </ul>
-        <div>
-            <span class="experience__skill-tag" v-on:click="scrollToSkill(skill)" v-bind:key="skill" v-for="skill in experience.skills"># {{skill}}</span>
+        <div class="post-card__list">
+            <ul>
+                <li v-bind:key="task" v-for="task in experience.tasks">{{task}}</li>
+            </ul>
+        </div>
+        <div class="post-tags">
+            <span class="post-tags__link" v-on:click="scrollToSkill(skill)" v-bind:key="skill" v-for="skill in experience.skills">#{{skill}}</span>
         </div>
     </div>
 </template>
 
 <script>
 import {TweenLite, Power3} from 'gsap'
-import ScrollTo from 'gsap/ScrollToPlugin'
 
 export default {
     props: {
@@ -28,19 +27,15 @@ export default {
         },
         skillList: Array,
     },
-    mounted() {
-        console.log(this.$props)
-    },
     methods: {
     scrollToSkill: function(id) {
-        const mainElement = document.getElementById('layout');
-        const element = document.getElementById(id);
+        const mainElement = document.getElementById('layout')
+        const element = document.getElementById(id)
         if (element) {
-            element.style.backgroundColor = '#dec79b';
-            element.style.color = '#000';
-            TweenLite.to(mainElement, 1, {scrollTo: `#${element.id}`, ease: Power3.easeOut, onStart: () => {
-                TweenLite.to(element, 1.3, {backgroundColor: 'none', color: '#fff'})
-            }});
+            element.style.backgroundColor = '#dec79b'
+            element.style.color = '#000'
+            TweenLite.to(element, 1.5, {backgroundColor: 'none', color: '#fff'})
+            TweenLite.to(mainElement, 1, {scrollTo: `#${element.id}`, ease: Power3.easeOut})
         }
     }
   }
@@ -48,34 +43,32 @@ export default {
 </script>
 
 <style lang="scss">
-.experience__container {
-    width: 100%;
-    color: var(--body-color);
-    margin: 10px 0px;
+@import "~/assets/style/_mixins.scss";
+.experience {
+    &__header {
+        display: flex;
+        flex-direction: column;
 
-    .experience__skill-tag {
-        background-color: var(--bg-card);
-        border-radius: 5px;
-        font-size: 0.9rem;
-        padding: 10px;
-
-        &:hover {
-            color: var(--highlight-color);
-            cursor: pointer;
+        span {
+            min-width: fit-content;
+        }
+        @include lg {
+            flex-direction: row;
+            align-items: center;
         }
     }
-    .experience__task-list {
-        margin-top: 25px;
-        font-size: 0.9rem;
-        padding: 0px 10px;
+
+    &__location {
+        @include lg {
+            margin-left: 40px;
+        }
     }
-    .experience__timeline {
-        float: right;
-    }
-    span {
-        font-weight: 300;
-        font-size: 1.2rem;
-        margin-right: 20px;
+
+    &__timeline {
+        width: -webkit-fill-available;
+        @include lg {
+            text-align: end;
+        }
     }
 }
 </style>

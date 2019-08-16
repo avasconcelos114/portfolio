@@ -10,6 +10,7 @@
 </template>
 
 <style lang="scss">
+@import "~/assets/style/_mixins.scss";
 .header {
   position: fixed;
   width: 100%;
@@ -26,7 +27,11 @@
   margin-left: 20px;
   text-decoration: none;
   color: var(--body-color);
+  font-size: .9rem !important;
 
+  @include lg {
+    font-size: 1rem;
+  }
   &:hover {
     color: var(--highlight-color);
   }

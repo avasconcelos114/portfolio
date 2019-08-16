@@ -17,7 +17,10 @@
   
     <!-- Basic self intro -->
     <section id="intro">
-      <div class="intro__row flex__row">
+      <div class="intro__row">
+        <div class="intro__image-container">
+          <g-image alt="Andre Vasconcelos" src="~/assets/img/portfolio_picture.jpg" />
+        </div>
         <div class="intro__description flex__column">
           <h3>
             I am a <span class="highlighted">Brazilian</span> developer based in Seoul, South Korea.
@@ -28,13 +31,9 @@
             I also like to use my spare time to build things for others.
           </h4>
         </div>
-  
-        <div class="intro__image-container">
-          <g-image alt="Andre Vasconcelos" src="~/assets/img/portfolio_picture.jpg" />
-        </div>
       </div>
 
-      <div class="intro__row flex__column">
+      <div class="flex__column">
         <Experience :experience="experience" :skillList="skillList" v-bind:key="experience.company" v-for="experience in experiences"/>
       </div>
     </section>
@@ -124,7 +123,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import "~/assets/style/_mixins.scss";
 section {
   min-height: 560px;
   padding: 0 10%;
@@ -182,19 +181,33 @@ section {
 
   .intro__row {
     display: flex;
+    flex-direction: column;
+
+    @include lg {
+      flex-direction: row;
+    }
 
     .intro__description {
-      max-width: 750px;
       height: 500px;
-      width: 50%;
+      width: 100%;
       justify-content: center;
-      align-items: center;
+      align-content: center;
+      
+      @include lg {
+        padding-left: 20px;
+        width: 65%;
+        align-content: flex-start;
+      }
     }
     .intro__image-container {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 45%;
+      width: 100%;
+
+      @include lg {
+        width: 35%;
+      }
     }
   }
 
@@ -204,12 +217,11 @@ section {
   }
 
   img {
-    filter: grayscale(.3);
-    border-radius: 100%;
+    filter: grayscale(.4);
     object-fit: cover;
-    object-position: 0% 0%;
+    object-position: 0% 16%;
     height: 350px;
-    width: 350px;
+    width: 400px;
   }
 }
 #skills {

@@ -13,20 +13,5 @@ export default {
 </script>
 
 <style lang="scss">
-.post-tags {
-  margin: 1em 0 0;
-  &__link {
-  	margin-right: .7em;
-  	font-size: .8em;
-  	color: var(--body-color);
-  	text-decoration: none;
-  	background-color: var(--bg-color);
-  	padding: .5em;
-  	border-radius: var(--radius);
 
-    &:hover {
-        color: var(--highlight-color);
-    }
-  }
-}
 </style>

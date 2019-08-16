@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Projects I worked in.</h1>
+    <h1 class="project__header">Projects I worked in.</h1>
     <!-- List posts -->
     <div class="projects">
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
@@ -51,6 +51,15 @@ export default {
 </page-query>
 
 <style lang="scss">
+@import "~/assets/style/_mixins.scss";
+.project__header {
+  display: flex;
+  width: fit-content;
+  font-weight: 400;
+  color: var(--body-color);
+  margin: 0 auto;
+  text-align: center;
+}
 .projects {
   display: flex;
   flex-direction: row;
@@ -59,7 +68,11 @@ export default {
 
 }
 .projects > div {
-  width: 30%;
-  margin-right: 3%;
+  width: 100%;
+
+  @include lg {
+    width: 30%;
+    margin-right: 3%;
+  }
 }
 </style>

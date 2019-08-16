@@ -51,12 +51,13 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 #layout {
   width: 100%;
   margin: 0 auto;
-  max-height: calc(100vh - 60px);
+  height: calc(100vh - 100px);
   overflow: auto;
 }
 </style>

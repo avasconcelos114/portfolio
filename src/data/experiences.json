@@ -3,8 +3,8 @@
         "city": "Seoul",
         "country": "South Korea",
         "company": "Slexn Inc.",
-        "from": "11/01/2017",
-        "until": "present",
+        "from": "11 / 2017",
+        "until": "Now",
         "tasks": [
             "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
             "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others.",
@@ -24,8 +24,8 @@
        "city": "Seoul",
        "country": "South Korea",
        "company": "MAYN Ltd.",
-       "from": "06/21/2015",
-       "until": "10/31/2017",
+       "from": "06 / 2015",
+       "until": "10 / 2017",
        "tasks": [
             "Developed the front-end for the company's core product (Disaster Recovery Automation Solution) utilizing React.js and Redux.",
             "Developed a custom dashboard application for the Korea Local Information Research & Development Institute.",
