@@ -39,9 +39,6 @@ export default {
   components: {
     Author,
     PostCard
-  },
-  metaInfo: {
-    title: 'Hello, world!'
   }
 }
 </script>
