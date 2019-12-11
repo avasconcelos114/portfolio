@@ -5,7 +5,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages --git \"$(which git)\" -d dist",
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "start": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {

@@ -13,9 +13,13 @@ tags: ["Front-end", "Typescript"]
 ![](../images/cryptoboard/dashboard.png)
 
 ## Project Description  
-
+With this project, I ha
 ## Project Goals
 
 ## Stack Used
+* React + Typescript
+* Redux
+* Styled Components
+* Jest & Enzyme Unit Testing
 
 ## Conclusion

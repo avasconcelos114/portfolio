@@ -31,6 +31,23 @@
             "level": 3
         }
     ],
+    "mobile": [
+        {
+            "id": "reactnative",
+            "title": "React Native",
+            "level": 4
+        },
+        {
+            "id": "flutter",
+            "title": "Flutter",
+            "level": 3
+        },
+        {
+            "id": "swift",
+            "title": "Swift",
+            "level": 3
+        }
+    ],
     "backend": [
         {
             "id": "nodejs",

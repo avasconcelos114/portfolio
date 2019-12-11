@@ -17,5 +17,8 @@ tags: ["Front-end", "Javascript ES6"]
 ## Project Goals
 
 ## Stack Used
+* Javascript (ES6)
+* Redom
+* Three.js
 
 ## Conclusion

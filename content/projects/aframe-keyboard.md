@@ -9,7 +9,7 @@ canonical_url: false
 description: ""
 tags: ["Front-end", "A-Frame"]
 ---
-# Project recap: Cryptoboard
+# Project recap: Aframe Keyboard
 ![](../images/aframe/keyboard.png)
 
 ## Project Description  

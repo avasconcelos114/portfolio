@@ -45,6 +45,11 @@
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in frontend"/>
       </div>
 
+      <h4 class="highlighted">Mobile</h4>
+      <div class="skill-container flex__row">
+        <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in mobile"/>
+      </div>
+
       <h4 class="highlighted">Back-end</h4>
       <div class="skill-container flex__row">
         <Skill :skill="skill"  v-bind:key="skill.title" v-for="skill in backend"/>
@@ -85,6 +90,7 @@ export default {
   data () {
     return {
       frontend: Skills.frontend,
+      mobile: Skills.mobile,
       backend: Skills.backend,
       devops: Skills.devops,
       misc: Skills.misc,
@@ -93,7 +99,7 @@ export default {
     }
   },
   beforeMount() {
-    this.skillList = this.frontend.concat(this.backend, this.devops)
+    this.skillList = this.frontend.concat(this.mobile, this.backend, this.devops)
   },
   mounted() {
     // Loading and configuring rotating text

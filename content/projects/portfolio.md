@@ -17,5 +17,7 @@ tags: ["Front-end", "Vue.js"]
 ## Project Goals
 
 ## Stack Used
+* Vue.js (Gridsome)
+* SCSS
 
 ## Conclusion

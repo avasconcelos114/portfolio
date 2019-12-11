@@ -9,7 +9,8 @@
             "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
             "Developed integrations between a variety of tools, including GitHub, Mattermost, codeBeamer, Jira, and others.",
             "Set up CI/CD Pipelines that automatically rebase customized clients onto the upstream master, and developed a chatbot to alert development team of failed rebase attempts.",
-            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics."
+            "Customized a push notification proxy server to meet security requirements set by Samsung Electronics.",
+            "Developed data shippers to a logging platform (Humio), and created a dashboard utilizing Humio's querying language."
         ],
         "skills": [
             "reactjs",
@@ -39,5 +40,24 @@
            "css",
            "jquery"
        ]
+    },
+    {
+        "city": "Seoul",
+        "country": "South Korea",
+        "company": "Open Source & Personal Projects",
+        "from": "04 / 2017",
+        "until": "Now",
+        "tasks": [
+            "Received MVP award from Mattermost Inc. for the creation of a Mattermost Themes site.",
+            "Made contributions to multiple Mattermost projects, such as the mobile app, webapp, and writing official documentation.",
+            "Created a Virtual Reality keyboard meant for WebVR experiences.",
+            "Developed an Augmented Reality prototype app that searches through Korean dish names, and renders a 3D model in real space."
+        ],
+        "skills": [
+            "reactnative",
+            "reactjs",
+            "swift",
+            "flutter"
+        ]
     }
 ]
