@@ -57,7 +57,7 @@ export default {
   width: fit-content;
   font-weight: 400;
   color: var(--body-color);
-  margin: 0 auto;
+  margin: 30px auto;
   text-align: center;
 }
 .projects {

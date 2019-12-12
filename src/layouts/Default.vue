@@ -61,5 +61,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  padding: 10px;
 }
 </style>

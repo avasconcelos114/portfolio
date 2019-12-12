@@ -52,21 +52,21 @@ export default {
         span {
             min-width: fit-content;
         }
-        @include lg {
+        @include xl {
             flex-direction: row;
             align-items: center;
         }
     }
 
     &__location {
-        @include lg {
+        @include xl {
             margin-left: 40px;
         }
     }
 
     &__timeline {
         width: -webkit-fill-available;
-        @include lg {
+        @include xl {
             text-align: end;
         }
     }

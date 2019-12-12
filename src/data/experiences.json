@@ -44,19 +44,20 @@
     {
         "city": "Seoul",
         "country": "South Korea",
-        "company": "Open Source & Personal Projects",
+        "company": "Open Source & Misc Projects",
         "from": "04 / 2017",
         "until": "Now",
         "tasks": [
             "Received MVP award from Mattermost Inc. for the creation of a Mattermost Themes site.",
             "Made contributions to multiple Mattermost projects, such as the mobile app, webapp, and writing official documentation.",
             "Created a Virtual Reality keyboard meant for WebVR experiences.",
-            "Developed an Augmented Reality prototype app that searches through Korean dish names, and renders a 3D model in real space."
+            "Working on an open-source WebVR sandbox with pre-made functionalities that could be re-applied to other projects.",
+            "Working on a mobile application that helps pet owners provide care, and share pet care related information with others"
         ],
         "skills": [
             "reactnative",
             "reactjs",
-            "swift",
+            "serverlessFramework",
             "flutter"
         ]
     }

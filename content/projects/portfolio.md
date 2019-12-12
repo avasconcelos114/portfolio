@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Portfolio Site
 date: 2019-08-12
 project: true
 slug: 'portfolio'
@@ -16,7 +16,7 @@ tags: ["Front-end", "Vue.js"]
 
 ## Project Goals
 
-## Stack Used
+## Skills showcase
 * Vue.js (Gridsome)
 * SCSS
 

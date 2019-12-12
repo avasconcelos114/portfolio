@@ -19,7 +19,7 @@ tags: ["Mobile", "Swift"]
 
 ## Project Goals
 
-## Stack Used
+## Skills showcase
 * Swift
 * ARKit
 

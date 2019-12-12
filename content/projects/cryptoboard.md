@@ -16,7 +16,7 @@ tags: ["Front-end", "Typescript"]
 With this project, I ha
 ## Project Goals
 
-## Stack Used
+## Skills showcase
 * React + Typescript
 * Redux
 * Styled Components

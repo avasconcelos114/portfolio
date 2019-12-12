@@ -65,9 +65,9 @@ But at the same time offering a [wider range of configurations](https://github.c
 
 You can find the link of this project on GitHub [here](https://github.com/WandererOU/aframe-keyboard).
 ## Project Goals
-To provide an easy-to-setup, customizeable keyboard for virtual reality that can be kept up-to-date to the latest Aframe versions.
+* To provide an easy-to-setup, customizeable keyboard for virtual reality that can be kept up-to-date to the latest Aframe versions.
 
-## Stack Used
+## Skills showcase
 * Javascript (ES6)
 * Webpack
 
