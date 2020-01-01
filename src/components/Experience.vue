@@ -7,7 +7,10 @@
         </div>
         <div class="post-card__list">
             <ul>
-                <li v-bind:key="task" v-for="task in experience.tasks">{{task}}</li>
+                <li v-bind:key="task" v-for="task in experience.tasks">
+                    {{task.text}}
+                    <a v-if="task.link" :href="task.link"> [Link]</a>
+                </li>
             </ul>
         </div>
         <div class="post-tags">
