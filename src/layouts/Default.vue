@@ -57,7 +57,7 @@ body {
 #layout {
   width: 100%;
   margin: 0 auto;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 60px);
   overflow-x: hidden;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;

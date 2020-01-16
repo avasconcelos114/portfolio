@@ -8,35 +8,39 @@
                 class="skill-level" name='skill-level' 
                 type="checkbox"
             /> 
-            <label for="skill-level"></label> 
+            <label data-tip="Beginner" for="skill-level"></label> 
+
             <input 
                 value="2" 
                 :checked="getStarValue(skill.level, 2)" 
                 class="skill-level" name='skill-level' 
                 type="checkbox"
             />
-            <label for="skill-level"></label> 
+            <label data-tip="Familiar" for="skill-level"></label> 
+
             <input 
                 value="3" 
                 :checked="getStarValue(skill.level, 3)" 
                 class="skill-level" name='skill-level' 
                 type="checkbox"
             />
-            <label for="skill-level"></label> 
+            <label data-tip="Proficient" for="skill-level"></label> 
+
             <input 
                 value="4" 
                 :checked="getStarValue(skill.level, 4)" 
                 class="skill-level" name='skill-level' 
                 type="checkbox"
             />
-            <label for="skill-level"></label> 
+            <label data-tip="Advanced" for="skill-level"></label> 
+
             <input 
                 value="5" 
                 :checked="getStarValue(skill.level, 5)" 
                 class="skill-level" name='skill-level' 
                 type="checkbox"
             />
-            <label for="skill-level"></label> 
+            <label data-tip="Professional" for="skill-level"></label> 
         </div>
     </div>
 </template>

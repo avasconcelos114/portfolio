@@ -10,7 +10,7 @@
           I like working with <span class="rotating-text highlighted"></span>
         </h3>
       </div>
-      <div class="button-container">
+      <div class="main__button-container">
         <button v-on:click="scrollToIntro()">Read more about me</button>
       </div>
     </section>
@@ -143,11 +143,11 @@ section {
   }
 }
 #main {
-  height: calc(100vh - 60px);
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
 
-  .button-container {
+  .main__button-container {
     display: flex;
     justify-content: center;
     align-items: flex-end;
