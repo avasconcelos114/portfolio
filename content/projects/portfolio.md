@@ -4,7 +4,7 @@ date: 2019-08-12
 project: true
 slug: 'portfolio'
 cover_image: ../images/portfolio/about.png
-published: true
+published: false
 canonical_url: false
 description: ""
 tags: ["Front-end", "Vue.js"]
