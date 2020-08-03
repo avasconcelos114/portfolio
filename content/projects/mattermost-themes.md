@@ -32,7 +32,7 @@ The project even got a shout-out from Mattermost's CEO 😱
 
 ![](../images/mattermost-themes/tweet.png) 
 
-As of yet, the project counts with over 30 themes that users are able to select with the single click of a button, and apply it to a Mattermost instance of their choice. And the project has been visited by over 500 users from 48 different countries! 
+As of yet, the project counts with over 30 themes that users are able to select with the single click of a button, and apply it to a Mattermost instance of their choice. And the project has been visited by over 3,400 users from 87 different countries! 
 
 ![](../images/mattermost-themes/analytics.png) 
 

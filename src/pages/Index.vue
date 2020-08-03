@@ -27,8 +27,8 @@
           </h3>
 
           <h4>
-            I currently work at <span class="highlighted">Slexn Inc.</span> customizing enterprise-grade software for large-scale client sites. <br> <br>
-            I also like to use my spare time to build things for others.
+            Currently working at <a href="https://www.wanted.co.kr/newintro" class="highlighted">Wanted Lab Inc.</a>, helping build Asia's first referral-powered recruiting platform. <br> <br>
+            And I ❤️ Open Source software!
           </h4>
         </div>
       </div>
@@ -76,7 +76,7 @@ import ScrollTo from 'gsap/ScrollToPlugin'
 import Skills from '~/data/skills.json'
 import Skill from '~/components/Skill.vue'
 
-import Experiences from '~/data/experiences.json'
+import Experiences from '~/data/experiences'
 import Experience from '~/components/Experience.vue'
 
 export default {

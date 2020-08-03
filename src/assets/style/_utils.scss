@@ -8,6 +8,7 @@
 
 .highlighted {
   color: var(--highlight-color);
+  text-decoration: none;
 }
 
 .flex__row {
@@ -21,7 +22,7 @@
 }
 
 input[type="button"]{
-   outline:none;
+  outline:none;
 }
 
 // Scrollbar customization

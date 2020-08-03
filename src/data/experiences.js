@@ -1,10 +1,36 @@
-[
+const experiences = [
+    {
+        "city": "Seoul",
+        "country": "South Korea",
+        "company": "Wanted Lab Inc.",
+        "from": "05 / 2020",
+        "until": "Now",
+        "tasks": [
+            {
+                "text": "Maintaining Wanted's frontend clients written in React + Redux",
+                "link": null
+            },
+            {
+                "text": "Wrote the Wanted Coding Styleguide for Frontend developers, and created a customized ESLint ruleset based on it",
+                "link": null
+            },
+            {
+                "text": "Assisting team with building deployment pipelines, scripts, setting up E2E testing with Cypress, & much more 💪",
+                "link": null
+            }
+        ],
+        "skills": [
+            "reactjs",
+            "nodejs",
+            "aws"
+        ]
+    },
     {
         "city": "Seoul",
         "country": "South Korea",
         "company": "Slexn Inc.",
         "from": "11 / 2017",
-        "until": "Now",
+        "until": "04 / 2020",
         "tasks": [
             {
                 "text": "Customized the webapp, desktop app, and mobile apps of an enterprise chat application for usage in Samsung Electronics.",
@@ -36,38 +62,38 @@
             "cicd"
         ]
     },
-    {
-       "city": "Seoul",
-       "country": "South Korea",
-       "company": "MAYN Ltd.",
-       "from": "06 / 2015",
-       "until": "10 / 2017",
-       "tasks": [
-            {
-                "text": "Developed the front-end for the company's core product (Disaster Recovery Automation Solution) utilizing React.js and Redux.",
-                "link": null
-            },
-            {
-                "text": "Developed a custom dashboard application for the Korea Local Information Research & Development Institute.",
-                "link": null
-            },
-            {
-                "text": "Assisted with the created of back-end features in Java, as well as the creation of SQL queries for CRUD actions.",
-                "link": null
-            },
-            {
-                "text": "Maintained and improved the back-end logic of a webapp for project management built over the Spring Framework (Java), and oversaw its implementation in the client-site (the Cloud Data Center of the Metropolitan City of Seoul)",
-                "link": null
-            }
-       ],
-       "skills": [
-           "reactjs",
-           "sql",
-           "html",
-           "css",
-           "jquery"
-       ]
-    },
+    // {
+    //     "city": "Seoul",
+    //     "country": "South Korea",
+    //     "company": "MAYN Ltd.",
+    //     "from": "06 / 2015",
+    //     "until": "10 / 2017",
+    //     "tasks": [
+    //         {
+    //             "text": "Developed the front-end for the company's core product (Disaster Recovery Automation Solution) utilizing React.js and Redux.",
+    //             "link": null
+    //         },
+    //         {
+    //             "text": "Developed a custom dashboard application for the Korea Local Information Research & Development Institute.",
+    //             "link": null
+    //         },
+    //         {
+    //             "text": "Assisted with the created of back-end features in Java, as well as the creation of SQL queries for CRUD actions.",
+    //             "link": null
+    //         },
+    //         {
+    //             "text": "Maintained and improved the back-end logic of a webapp for project management built over the Spring Framework (Java), and oversaw its implementation in the client-site (the Cloud Data Center of the Metropolitan City of Seoul)",
+    //             "link": null
+    //         }
+    //     ],
+    //     "skills": [
+    //         "reactjs",
+    //         "sql",
+    //         "html",
+    //         "css",
+    //         "jquery"
+    //     ]
+    // },
     {
         "city": "Seoul",
         "country": "South Korea",
@@ -80,8 +106,8 @@
                 "link": "https://developers.mattermost.com/contribute/mvp/"
             },
             {
-                "text": "Made contributions to multiple Mattermost projects, such as the mobile app, webapp, and writing official documentation.",
-                "link": null
+                "text": "Core Commiter in the Mattermost webapp and mobile app projects.",
+                "link": "https://developers.mattermost.com/contribute/getting-started/core-committers/"
             },
             {
                 "text": "Created a Virtual Reality keyboard meant for WebVR experiences.",
@@ -104,3 +130,5 @@
         ]
     }
 ]
+
+export default experiences;
