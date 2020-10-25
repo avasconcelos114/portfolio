@@ -225,7 +225,6 @@ section {
   img {
     filter: grayscale(.4);
     object-fit: cover;
-    object-position: 0% 16%;
     height: 350px;
     width: 400px;
   }

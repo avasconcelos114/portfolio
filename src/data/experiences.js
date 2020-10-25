@@ -117,10 +117,10 @@ const experiences = [
                 "text": "Working on an open-source WebVR sandbox with pre-made functionalities that could be re-applied to other projects.",
                 "link": "https://labs.wanderer.studio"
             },
-            {
-                "text": "Working on a mobile application that helps pet owners provide care, and share pet care related information with others",
-                "link": null
-            }
+            // {
+            //     "text": "Working on a mobile application that helps pet owners provide care, and share pet care related information with others",
+            //     "link": null
+            // }
         ],
         "skills": [
             "reactnative",
