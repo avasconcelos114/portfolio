@@ -18,7 +18,7 @@
         {
             "id": "webpack",
             "title": "Webpack",
-            "level": 2
+            "level": 3
         },
         {
             "id": "css",
@@ -41,11 +41,6 @@
             "id": "flutter",
             "title": "Flutter",
             "level": 4
-        },
-        {
-            "id": "swift",
-            "title": "Swift",
-            "level": 2
         }
     ],
     "backend": [
@@ -62,7 +57,7 @@
         {
             "id": "sql",
             "title": "SQL",
-            "level": 4
+            "level": 3
         },
         {
             "id": "nosql",
@@ -72,19 +67,19 @@
         {
             "id": "golang",
             "title": "Golang",
-            "level": 2
+            "level": 1
         }
     ],
     "devops": [
         {
             "id": "cicd",
             "title": "CI/CD",
-            "level": 3
+            "level": 4
         },
         {
             "id": "docker",
             "title": "Docker",
-            "level": 3
+            "level": 4
         },
         {
             "id": "linux",
@@ -104,7 +99,7 @@
         {
             "id": "serverlessFramework",
             "title": "Serverless Framework",
-            "level": 3
+            "level": 2
         }
     ],
     "misc": [
