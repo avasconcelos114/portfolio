@@ -1,5 +1,38 @@
 const experiences = [
     {
+        "city": "Sofia",
+        "country": "Bulgaria",
+        "company": "Scavasoft",
+        "from": "10 / 2022",
+        "until": "Now",
+        "tasks": [
+            {
+                "text": "Developed and maintained Docebo LMS, a large-scale enterprise application that services 3800 enterprises, with over 60,000 monthly active users, built in Angular 14 and spanning over 20 inter-connected repositories as a domain-driven architecture.",
+                "link": null
+            },
+            {
+                "text": "Operated in a distributed agile scrum team with a 2-week sprint, and weekly product releases, often presenting the development team's progress to stakeholders during Sprint Review meetings.",
+                "link": null
+            },
+            {
+                "text": "Mentored and guided junior frontend developers and performed pair programming on ad-hoc basis.",
+                "link": null
+            },
+            {
+                "text": "Enhanced accessibility by ensuring features were keyboard navigable and meaningfully compatible with screen readers, improving the overall user experience.",
+                "link": null
+            },
+            {
+                "text": "Collaborated with QA Engineers and UI/UX Designers to deliver compliant and faithful implementations of numerous Epics.",
+                "link": null
+            }
+        ],
+        "skills": [
+            "angular",
+            "agile"
+        ]
+    },
+    {
         "city": "Seoul",
         "country": "South Korea",
         "company": "Wanted Lab Inc.",
@@ -54,38 +87,6 @@ const experiences = [
             "cicd"
         ]
     },
-    // {
-    //     "city": "Seoul",
-    //     "country": "South Korea",
-    //     "company": "MAYN Ltd.",
-    //     "from": "06 / 2015",
-    //     "until": "10 / 2017",
-    //     "tasks": [
-    //         {
-    //             "text": "Developed the front-end for the company's core product (Disaster Recovery Automation Solution) utilizing React.js and Redux.",
-    //             "link": null
-    //         },
-    //         {
-    //             "text": "Developed a custom dashboard application for the Korea Local Information Research & Development Institute.",
-    //             "link": null
-    //         },
-    //         {
-    //             "text": "Assisted with the created of back-end features in Java, as well as the creation of SQL queries for CRUD actions.",
-    //             "link": null
-    //         },
-    //         {
-    //             "text": "Maintained and improved the back-end logic of a webapp for project management built over the Spring Framework (Java), and oversaw its implementation in the client-site (the Cloud Data Center of the Metropolitan City of Seoul)",
-    //             "link": null
-    //         }
-    //     ],
-    //     "skills": [
-    //         "reactjs",
-    //         "sql",
-    //         "html",
-    //         "css",
-    //         "jquery"
-    //     ]
-    // },
     {
         "city": "",
         "country": "",
