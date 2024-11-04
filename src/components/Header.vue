@@ -1,12 +1,12 @@
 <template>
-    <header class="header">
-      <nav class="nav">
-        <g-link class="nav__link" to="/">About</g-link>
-        <g-link class="nav__link" to="/blog">Blog</g-link>
-        <g-link class="nav__link" to="/my-work">My work</g-link>
-        <g-link class="nav__link" to="/contact">Contact me</g-link>
-      </nav>
-    </header>
+  <header class="header">
+    <nav class="nav">
+      <g-link class="nav__link" to="/">About</g-link>
+      <g-link class="nav__link" to="/blog">Blog</g-link>
+      <g-link class="nav__link" to="/my-work">Projects</g-link>
+      <g-link class="nav__link" to="/contact">Contact me</g-link>
+    </nav>
+  </header>
 </template>
 
 <style lang="scss">
@@ -27,7 +27,7 @@
   margin-left: 20px;
   text-decoration: none;
   color: var(--body-color);
-  font-size: .9rem !important;
+  font-size: 0.9rem !important;
 
   @include lg {
     font-size: 1rem;

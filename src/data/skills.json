@@ -6,9 +6,9 @@
             "level": 5
         },
         {
-            "id": "html",
-            "title": "HTML5",
-            "level": 5
+            "id": "angular",
+            "title": "Angular",
+            "level": 4
         },
         {
             "id": "vuejs",
@@ -21,14 +21,19 @@
             "level": 3
         },
         {
-            "id": "css",
-            "title": "CSS3",
+            "id": "typescript",
+            "title": "TypeScript",
             "level": 4
         },
         {
-            "id": "jquery",
-            "title": "JQuery",
-            "level": 3
+            "id": "threejs",
+            "title": "Three.js",
+            "level": 2
+        },
+        {
+            "id": "stateMgt",
+            "title": "Redux/Vuex/Rxjs",
+            "level": 5
         }
     ],
     "mobile": [
@@ -50,24 +55,14 @@
             "level": 4
         },
         {
-            "id": "aws",
-            "title": "Amazon Web Services",
+            "id": "relational",
+            "title": "Relational Databases",
             "level": 3
         },
         {
-            "id": "sql",
-            "title": "SQL",
-            "level": 3
-        },
-        {
-            "id": "nosql",
-            "title": "No-SQL",
-            "level": 3
-        },
-        {
-            "id": "golang",
-            "title": "Golang",
-            "level": 1
+            "id": "dynamoDB",
+            "title": "DynamoDB",
+            "level": 4
         }
     ],
     "devops": [
@@ -75,6 +70,11 @@
             "id": "cicd",
             "title": "CI/CD",
             "level": 4
+        },
+        {
+            "id": "aws",
+            "title": "Amazon Web Services",
+            "level": 3
         },
         {
             "id": "docker",
@@ -87,22 +87,27 @@
             "level": 4
         },
         {
-            "id": "terraform",
-            "title": "Terraform",
-            "level": 2
-        },
-        {
-            "id": "nginx",
-            "title": "Nginx",
-            "level": 3
-        },
-        {
             "id": "serverlessFramework",
             "title": "Serverless Framework",
-            "level": 2
+            "level": 3
         }
     ],
     "misc": [
+        {
+            "id": "godot",
+            "title": "Godot (Game Engine)",
+            "level": 3
+        },
+        {
+            "id": "unreal",
+            "title": "Unreal 5",
+            "level": 1
+        },
+        {
+            "id": "figma",
+            "title": "Figma",
+            "level": 3
+        },
         {
             "id": "pt",
             "title": "Portuguese",
@@ -117,11 +122,6 @@
             "id": "kr",
             "title": "Korean",
             "level": 4
-        },
-        {
-            "id": "presentation",
-            "title": "Presentation Skills",
-            "level": 3
         }
     ]
 }

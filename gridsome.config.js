@@ -23,6 +23,9 @@ module.exports = {
   pathPrefix: '/portfolio',
   icon: './src/assets/img/personal_logo_dark_32.png',
   plugins: [
+    // {
+    //   use: '@gridsome/vue-remark',
+    // },
     {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
@@ -48,7 +51,7 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs'
+        // '@gridsome/remark-prismjs'
       ]
     }
   },
@@ -58,11 +61,6 @@ module.exports = {
 
     types.forEach(type => {
       addStyleResource(config.module.rule('sass').oneOf(type))
-    })
-
-    // or if you use scss
-    types.forEach(type => {
-      addStyleResource(config.module.rule('scss').oneOf(type))
     })
   }
 }
